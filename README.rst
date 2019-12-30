@@ -55,8 +55,9 @@ Create platform for the demo projects `2020 <https://github.com/letusdo/2020>`_ 
 
 Chandan:
 ==========
-
+.. code-block:: text
 (30.12.2019)
+
 * HTML Template Downloaded
 * Create the acrchitecture using composer/drupal console
 * convert html to drupal8
@@ -64,7 +65,9 @@ Chandan:
 
 Hena:
 ==========
-*(30.12.2019)
+.. code-block:: text
+(30.12.2019)
+
 * add css, js and image path to libraries.yml file
 
 Use The Source Luke!
