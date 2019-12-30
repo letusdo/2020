@@ -7,6 +7,8 @@ Introduction
 
 Hi all, we are planing to do drupal8 theming from scratch in 2020. I requesting you guys to participate actively and I can confidently say that after 3 months all of us will be able to do any kind of theming from scratch. Wish you best of luck. Those are not able to understand I will reach them out soon. Stay tuned and hope for the best. 
 
+Project coordinators:
+=========================
 +---------------+------------------+
 | **Chandan**:  | Architech        |
 +---------------+------------------+
