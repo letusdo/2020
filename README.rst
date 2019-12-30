@@ -56,6 +56,8 @@ Create platform for the demo projects `2020 <https://github.com/letusdo/2020>`_ 
 Chandan:
 ==========
 
+(30.12.2019)
+* HTML Template Downloaded
 * Create the acrchitecture using composer/drupal console
 * convert html to drupal8
 
