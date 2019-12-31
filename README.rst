@@ -58,8 +58,8 @@ Chandan:
 
 (30.12.2019)
 * HTML Template Downloaded
-* Create the acrchitecture using composer/drupal console
-* convert html to drupal8
+(31.12.2019)
+* Template Uploaded on git branch
 
 
 Hena:
