@@ -1,0 +1,19 @@
+<?php
+
+/*
+ * Implements theme_preprocess_page().
+ *
+ */
+
+function global_preprocess_page(&$variables) {
+  $variables['global_facebook'] = theme_get_setting('global_facebook');
+  $variables['global_twitter'] = theme_get_setting('global_twitter');
+  $variables['global_youtube'] = theme_get_setting('global_youtube');
+  $variables['global_instagram'] = theme_get_setting('global_instagram');
+  $variables['global_github'] = theme_get_setting('global_github');
+  $variables['global_contact_email'] = theme_get_setting('global_contact_email');
+	$variables['global_contact_phone'] = theme_get_setting('global_contact_phone');
+	$variables['global_open_hours'] = theme_get_setting('global_open_hours');
+	$variables['global_address'] = theme_get_setting('global_address');
+
+}

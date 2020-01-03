@@ -1,17 +1,20 @@
 name: global
 type: theme
-description: global custom theme 
+description: global custom theme
 package: theme
 core: 8.x
 libraries:
   - global/global-styling
- 
+
 #Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
 
 regions:
   navigation: Navigation
+  brand: Logo
   top_banner_content: Top Banner Content
   content: Content
   sidebar: Sidebar
   footer: Footer
+  footer_menu: Footer Menu
+  footer_blog: Recent Blog
   copyright: Copyright

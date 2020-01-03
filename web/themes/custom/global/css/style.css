@@ -9972,3 +9972,49 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+div#block-sitebranding img {
+  width: 210px;
+}
+
+/* Chandan Footer Menu */
+ul.list-unstyled a::before {
+  content: "\f119";
+  font-family: "Ionicons";
+  margin-right: 10px;
+}
+.block-21 .text {
+  width: calc(100% - 30px);
+  margin-left: 18px;
+}
+.views-field.views-field-comment-count span{
+  color: #7f7b7b;
+  margin-right: 15px;
+}
+.views-field.views-field-comment-count span::before {
+  content: "\e0b7";
+  font-family: 'icomoon' !important;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #7f7b7b;
+}
+.meta{
+  color: #7f7b7b;
+  margin-right: 15px;
+}
+.meta::before {
+  content: "\f073";
+  font-family: 'icomoon' !important;
+  margin-right: 5px;
+  color: #7f7b7b;
+}
+span.field-content.ico a::before {
+  content: "\e7fd";
+  font-family: 'icomoon' !important;
+  margin-right: 5px;
+  color: #7f7b7b;
+}
+span.field-content.ico {
+  margin-right: 15px;
+}
