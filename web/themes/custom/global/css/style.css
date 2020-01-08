@@ -10018,3 +10018,11 @@ span.field-content.ico a::before {
 span.field-content.ico {
   margin-right: 15px;
 }
+.blog-entry a img {
+    position: absolute;
+    height: auto;
+    width: 415px;
+}
+.blog-entry .meta-date {
+    position: relative;
+}
