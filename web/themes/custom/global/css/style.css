@@ -9978,7 +9978,7 @@ div#block-sitebranding img {
   width: 210px;
 }
 
-/* Chandan Footer Menu */
+/* Chandan */
 ul.list-unstyled a::before {
   content: "\f119";
   font-family: "Ionicons";
@@ -10025,4 +10025,7 @@ span.field-content.ico {
 }
 .blog-entry .meta-date {
     position: relative;
+}
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.ftco-navbar-light {
+  background: #00bdaa !important;
 }
