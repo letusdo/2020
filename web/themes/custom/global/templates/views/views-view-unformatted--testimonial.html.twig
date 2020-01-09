@@ -1,0 +1,51 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+<section class="ftco-intro ftco-no-pb img" style="background-image: url(images/bg_1.jpg);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9 col-md-8 d-flex align-items-center heading-section heading-section-white">
+        <h2 class="mb-3 mb-md-0">You Always Get the Best Guidance</h2>
+      </div>
+      <div class="col-lg-3 col-md-4 ftco-animate fadeInUp ftco-animated">
+        <p class="mb-0"><a href="{{ url('<front>') }}/contact" class="btn btn-secondary py-3 px-4">Request Quote</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ftco-section testimony-section">
+  <div class="container-fluid px-md-5">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8 text-center heading-section ftco-animate fadeInUp ftco-animated">
+        <span class="subheading">Testimonies</span>
+        <h2 class="mb-4">Our Clients Says</h2>
+        <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+      </div>
+    </div>
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+{% for row in rows %}
+  {%
+    set row_classes = [
+    default_row_class ? 'views-row',
+  ]
+  %}
+  {{- row.content -}}
+{% endfor %}
+  </div>
+</section>
