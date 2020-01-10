@@ -10029,3 +10029,25 @@ span.field-content.ico {
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.ftco-navbar-light {
   background: #00bdaa !important;
 }
+.col-md-4.col-md-6.col-lg-4.text-center {
+  float: left;
+}
+.img.rounded.mb-4 img {
+  width: 100%;
+  height: auto;
+}
+.project .cat{
+  margin-top: -45px;
+}
+a.block-20.d-flex.align-items-end {
+  pointer-events: none;
+}
+nav#ftco-navbar {
+  position: sticky;
+  top: 0;
+}
+@media (max-width: 769px){
+  .project .cat {
+    margin-top: -73px;
+  }
+}
