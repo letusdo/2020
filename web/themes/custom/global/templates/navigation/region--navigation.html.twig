@@ -12,21 +12,13 @@
  * @see template_preprocess_region()
  */
 #}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+  <div class="container d-flex align-items-center">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menu
+    </button>
 {% if content %}
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container d-flex align-items-center">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
-      <form action="#" method="post" id="search-block-form" accept-charset="UTF-8" class="searchform order-lg-last">
-        <div class="form-group d-flex">
-          <input type="text" class="form-control pl-3" placeholder="Search">
-          <button type="submit" placeholder="" class="form-control search"><span class="ion-ios-search"></span></button>
-        </div>
-      </form>
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        {{ content }}
-      </div>
-    </div>
-  </nav>
+  {{ content }}
 {% endif %}
+  </div>
+</nav>
