@@ -10051,3 +10051,7 @@ nav#ftco-navbar {
     margin-top: -73px;
   }
 }
+div#services-1 img {
+    height: 400px !important;
+    width: 730px !important;
+}
