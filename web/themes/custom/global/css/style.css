@@ -10123,3 +10123,9 @@ section.hero-wrap.hero-wrap-2 {
 .staff.border:hover {
   transform: scale(1.02);
 }
+.mt-60 {
+  margin-top: 60px;
+}
+.mt-40 {
+  margin-bottom: 40px;
+}
