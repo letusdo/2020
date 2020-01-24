@@ -10062,7 +10062,9 @@ nav#ftco-navbar {
   width: 100%;
 }
 /* Chandan */
-
+.btn.btn-primary{
+  border-right: 40px;
+}
 h3.heading{
   margin-top: 0px;
   margin-bottom: 0px;
@@ -10073,7 +10075,7 @@ h3.heading{
 span.text, .ftco-footer .block-21 .text .heading a {
   color: rgba(255,255,255,0.7) !important;
 }
-.owl-carousel .owl-item img{
+.testimony-wrap img {
   border-radius: 50%;
 }
 .social a, .ml-auto a {
@@ -10129,3 +10131,28 @@ section.hero-wrap.hero-wrap-2 {
 .mt-40 {
   margin-bottom: 40px;
 }
+.searchform{
+  width: 100%;
+}
+ul.navbar-nav.mr-auto li:last-child {
+  margin-right: 270px;
+}
+.slider-item a {
+  background: #00bdaa;
+  border: 1px solid #00bdaa;
+  color: #fff;
+  padding: 17px 38px;
+  border-radius: 40px;
+}
+.slider-item a:hover{
+  border: 1px solid #00bdaa;
+  background: transparent;
+  color: #00bdaa;
+  text-decoration: none;
+}
+@media (max-width: 767.98px) {
+  .contextual-region form, #block-searchform {
+    margin-left: inherit;
+  }
+}
+
