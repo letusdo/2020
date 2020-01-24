@@ -67,7 +67,7 @@ function global_form_system_theme_settings_alter(&$form, Drupal\Core\Form\FormSt
     '#title' => t('Twitter'),
     '#description' => t('Add Twitter Link'),
     '#default_value' => theme_get_setting('global_twitter'),
-  ); 
+  );   
   // Youtube Link
   $form['global_social']['global_youtube'] = array(
     '#type' => 'textfield',
