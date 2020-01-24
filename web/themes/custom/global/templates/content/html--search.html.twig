@@ -1,3 +1,93 @@
+<div class="bg-top navbar-light d-flex flex-column-reverse">
+  <div class="container py-3">
+    <div class="row no-gutters d-flex align-items-center align-items-stretch">
+      <div class="col-md-4 d-flex align-items-center py-4">
+        {{ page.brand }}
+      </div>
+      <div class="col-lg-8 d-block">
+        <div class="row d-flex">
+          <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="ion-ios-paper-plane"></span></div>
+            <div class="text">
+              <span>Email</span>
+              <span>{{ global_contact_email }}</span>
+            </div>
+          </div>
+          <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="ion-ios-call"></span></div>
+            <div class="text">
+              <span>Call</span>
+              <span>{{ global_contact_phone }}</span>
+            </div>
+          </div>
+          <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="ion-ios-time"></span></div>
+            <div class="text">
+              <span>Working Hours</span>
+              <span>{{ global_open_hours }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="top-social-menu py-2 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="social mb-0">
+            <a href="{{ global_facebook }}" target="_blank"><i class="ion-logo-facebook"></i><span class="sr-only">Facebook</span></a>
+            <a href="{{ global_twitter }}" target="_blank"><i class="ion-logo-twitter"></i><span class="sr-only">Twitter</span></a>
+            <a href="{{ global_youtube }}" target="_blank"><i class="ion-logo-youtube"></i><span class="sr-only">Youtube</span></a>
+            <a href="{{ global_instagram }}" target="_blank"><i class="ion-logo-instagram"></i><span class="sr-only">Instagram</span></a>
+            <a href="{{ global_github }}" target="_blank"><i class="ion-logo-github"></i><span class="sr-only">Github</span></a>
+          </p>
+        </div>
+        <div class="col text-right">
+          <a href="{{ url('<front>') }}contact-us" class="btn-link">Request A Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ page.navigation }}
+<!-- END nav -->
 {{ page.content }}
 
+
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6 col-lg-4">
+        <div class="ftco-footer-widget mb-5">
+          <h2 class="ftco-heading-2">Have a Questions?</h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li><span class="icon icon-map-marker"></span><span class="text">{{ global_address }}</span></li>
+              <li><a href="tel:{{ global_contact_phone }}"><span class="icon icon-phone"></span><span class="text">{{ global_contact_phone }}</span></a></li>
+              <li><a href="mailto:{{ global_contact_email }}"><span class="icon icon-envelope"></span><span class="text">{{ global_contact_email }}</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="ftco-footer-widget mb-5 ml-md-4">
+          <h2 class="ftco-heading-2">Links</h2>
+          {{ page.footer_menu }}
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="ftco-footer-widget mb-5">
+          {{ page.footer_blog }}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{ page.copyright }}
+      </div>
+    </div>
+  </div>
+</footer>
