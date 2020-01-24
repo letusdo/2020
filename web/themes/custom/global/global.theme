@@ -35,4 +35,54 @@ function global_preprocess_menu(&$variables, $hook) {
     }
   }
 }
+<<<<<<< HEAD
 
+=======
+/*****
+      implemented taxonomy term value
+*****/
+
+function global_preprocess_views_view(&$variables) {
+  
+  if ($variables['id'] == 'services') {
+    $query = \Drupal::entityQuery('taxonomy_term');
+      $query->condition('vid', "service_catalog");
+      $tids = $query->execute();
+      $terms = \Drupal\taxonomy\Entity\Term::loadMultiple($tids);
+     //  foreach ($terms as $term) {
+      //   $service_catalog[] = $term->get('name')->getString();
+      // }
+      $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+      foreach($tids as $key=>$val) {
+         $taxonomy_term = \Drupal\taxonomy\Entity\Term::load($val);
+         $taxonomy_term_trans = \Drupal::service('entity.repository')->getTranslationFromContext($taxonomy_term, $language);
+         
+         $service_catalog[] = $taxonomy_term_trans->name->value;
+         echo $service_catalog[0];
+      }
+    $variables['service_catalog'] = $service_catalog;
+  }
+//echo $service_catalog[1];
+      /*$language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+      $variables['current_language'] = $language;*/
+
+}
+
+/*
+$query = \Drupal::entityQuery('taxonomy_term');
+     $query->condition('vid', "service_catalog");
+     $tids = $query->execute();
+   
+     $taxname_array = array();
+   
+     foreach($tids as $key=>$val) {
+     $taxonomy_term = \Drupal\taxonomy\Entity\Term::load($val);
+     $taxonomy_term_trans = \Drupal::service('entity.repository')->getTranslationFromContext($taxonomy_term, 'fr');
+     
+     array_push($taxname_array, $taxonomy_term_trans->name->value);
+   }
+   
+   echo '<pre>';
+   print_r($taxname_array);die;
+   die;*/
+>>>>>>> 830339bc33c4e5b769fa44a57df2741a3f5bf95d

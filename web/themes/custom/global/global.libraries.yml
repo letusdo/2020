@@ -2,6 +2,7 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+      css/custom.css: {}
       css/animate.css: {}
       css/aos.css: {}
       css/bootstrap.min.css: {}

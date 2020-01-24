@@ -10051,6 +10051,7 @@ nav#ftco-navbar {
     margin-top: -73px;
   }
 }
+<<<<<<< HEAD
 .main-gallery {
   background: #fff;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
@@ -10156,3 +10157,9 @@ ul.navbar-nav.mr-auto li:last-child {
   }
 }
 
+=======
+div#services-1 img {
+    height: 400px !important;
+    width: 730px !important;
+}
+>>>>>>> 830339bc33c4e5b769fa44a57df2741a3f5bf95d

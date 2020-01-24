@@ -15,6 +15,7 @@
  * @see template_preprocess_views_view_unformatted()
  */
 #}
+<<<<<<< HEAD
 <section class="">
   <div class="container">
     <div class="row">
@@ -49,3 +50,63 @@
     </div>
   </div>
 </section>
+=======
+<section class="ftco-section ftco-no-pt">
+    	<div class="container">
+    		<div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section ftco-animate fadeInUp ftco-animated">
+          	<span class="subheading">Services</span>
+            <h2 class="mb-4">Why Choose Us?</h2>
+            <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+          </div>
+        </div>
+  			<div class="row tabulation mt-4 ftco-animate fadeInUp ftco-animated">
+  				<div class="col-md-4">
+						<ul class="nav nav-pills nav-fill d-md-flex d-block flex-column">
+						  <li class="nav-item text-left">
+						    <a class="nav-link active py-4" data-toggle="tab" href="#services-1"><span class="flaticon-analysis mr-2"></span> {{ taxname_array[1]}}</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-2"><span class="flaticon-business mr-2"></span> Business Consulting</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-3"><span class="flaticon-insurance mr-2"></span> Business Insurance</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-4"><span class="flaticon-money mr-2"></span> Global Investigation</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-5"><span class="flaticon-rating mr-2"></span> Audit &amp; Evaluation</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-6"><span class="flaticon-search-engine mr-2"></span> Marketing Strategy</a>
+						  </li>
+						  {% for row in rows %}
+						  {{- row.taxname(service_catalog[0]['#name']) -}}
+						  {{ content.taxname(service-catalog).0 }}
+
+						{% endfor %}
+						</ul>
+					</div>
+					<div class="col-md-8">
+						<div class="tab-content">
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+  <div{{ row.attributes.addClass(row_classes) }}>
+    {{- row.content -}}
+  </div>
+{% endfor %}
+
+</div>
+</div>
+</div>
+</div>
+</section>
+>>>>>>> 830339bc33c4e5b769fa44a57df2741a3f5bf95d
