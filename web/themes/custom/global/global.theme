@@ -35,8 +35,6 @@ function global_preprocess_menu(&$variables, $hook) {
     }
   }
 }
-
-
 /*****
       implemented taxonomy term value
 *****/
@@ -84,4 +82,48 @@ $query = \Drupal::entityQuery('taxonomy_term');
    echo '<pre>';
    print_r($taxname_array);die;
    die;*/
+
+function global_preprocess_node(&$variables) {
+
+  $node_object = $variables['node'];
+  $node_type = $node_object->getType();
+  $nid = $node_object->id();
+// var_dump($node_type);
+// var_dump($nid);
+
+  if ($node_type == 'services') {
+    $body_text = $node_object->get('body')->getValue();
+
+    $node = &$variables['node'];
+    $body =  $node_object->body->value;
+    $node_array = $node->toArray();
+
+    if(empty($node_array['body'][0]['summary'])) {
+      $body_trimmed_text = substr(html_entity_decode(strip_tags($body_text[0]['value'])) ,0,270);
+    }
+    else {
+      $body_trimmed_text = $node_array['body'][0]['summary'];
+    }
+    $variables['body_trimmed_text'] = $body_trimmed_text;
+    $variables['body_remaining_text'] = $body_text;
+    $variables['body'] = $body;
+//    $blog_author_view = views_embed_view('blog_author_content', 'block_1', $nid);
+//    $variables['blog_author_view'] = drupal_render($blog_author_view);
+  }
+
+
+}
+function global_preprocess_views_view_unformatted(&$var){
+  static $counter = 0;
+  $vars['counter'] = $counter++;
+  $view = $var["view"];
+  $id = $view->id();
+
+  if ($id == 'training') {
+    $var['view_title'] = [
+      '#markup' => $view->getTitle(),
+    ];
+
+  }
+}
 

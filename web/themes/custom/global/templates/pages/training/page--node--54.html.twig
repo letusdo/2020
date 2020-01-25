@@ -1,0 +1,164 @@
+<div class="bg-top navbar-light d-flex flex-column-reverse">
+  <div class="container py-3">
+    <div class="row no-gutters d-flex align-items-center align-items-stretch">
+      <div class="col-md-4 d-flex align-items-center py-4">
+        {{ page.brand }}
+      </div>
+      <div class="col-lg-8 d-block">
+        <div class="row d-flex">
+          <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="ion-ios-paper-plane"></span></div>
+            <div class="text">
+              <span>Email</span>
+              <span>{{ global_contact_email }}</span>
+            </div>
+          </div>
+          <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="ion-ios-call"></span></div>
+            <div class="text">
+              <span>Call</span>
+              <span>{{ global_contact_phone }}</span>
+            </div>
+          </div>
+          <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="ion-ios-time"></span></div>
+            <div class="text">
+              <span>Working Hours</span>
+              <span>{{ global_open_hours }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-social-menu py-2 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="social mb-0">
+            <a href="{{ global_facebook }}" target="_blank"><i class="ion-logo-facebook"></i><span class="sr-only">Facebook</span></a>
+            <a href="{{ global_twitter }}" target="_blank"><i class="ion-logo-twitter"></i><span class="sr-only">Twitter</span></a>
+            <a href="{{ global_youtube }}" target="_blank"><i class="ion-logo-youtube"></i><span class="sr-only">Youtube</span></a>
+            <a href="{{ global_instagram }}" target="_blank"><i class="ion-logo-instagram"></i><span class="sr-only">Instagram</span></a>
+            <a href="{{ global_github }}" target="_blank"><i class="ion-logo-github"></i><span class="sr-only">Github</span></a>
+          </p>
+        </div>
+        <div class="col text-right">
+          <a href="{{ url('<front>') }}contact-us" class="btn-link">Request A Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ page.navigation }}
+<!-- END nav -->
+
+{#----------------------------------------------------training content----------------------------------------------#}
+
+<section class="ftco-section ftco-no-pt">
+  <div class="container">
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8 text-center heading-section ftco-animate fadeInUp1 ftco-animated">
+        <span class="subheading">Services</span>
+        <h2 class="mb-4">Why Choose Us?</h2>
+        <p>Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+      </div>
+    </div>
+    <div class="row tabulation mt-4 ftco-animate fadeInUp1 ftco-animated1">
+      <div class="col-md-4">
+        <ul class="nav nav-pills nav-fill d-md-flex d-block flex-column">
+          <li class="nav-item text-left">
+            <a class="nav-link active py-4" data-toggle="tab" href="#services-36"><span class="flaticon-analysis mr-2"></span> Business Active</a>
+          </li>
+          <li class="nav-item text-left">
+            <a class="nav-link py-4" data-toggle="tab" href="#services-37"><span class="flaticon-analysis mr-2"></span> Business Analysis</a>
+          </li>
+          <li class="nav-item text-left">
+            <a class="nav-link py-4" data-toggle="tab" href="#services-38"><span class="flaticon-business mr-2"></span> Business Consulting</a>
+          </li>
+          <li class="nav-item text-left">
+            <a class="nav-link py-4" data-toggle="tab" href="#services-39"><span class="flaticon-insurance mr-2"></span> Business Insurance</a>
+          </li>
+          <li class="nav-item text-left">
+            <a class="nav-link py-4" data-toggle="tab" href="#services-40"><span class="flaticon-money mr-2"></span> Global Investigation</a>
+          </li>
+          <li class="nav-item text-left">
+            <a class="nav-link py-4" data-toggle="tab" href="#services-41"><span class="flaticon-rating mr-2"></span> Audit &amp; Evaluation</a>
+          </li>
+          <li class="nav-item text-left">
+            <a class="nav-link py-4" data-toggle="tab" href="#services-42"><span class="flaticon-search-engine mr-2"></span> Marketing Strategy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-8">
+        <div class="tab-content">
+
+
+
+{#          <div class="tab-pane container p-0 active" id="services-1">#}
+{#            <div class="img" style="background-image: url(images/project-2.jpg);"></div>#}
+{#            <h3><a href="#">Business Analysis</a></h3>#}
+{#            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>#}
+{#          </div>#}
+          <div class="tab-pane container p-0 active" id="services-36">
+            <div class="img"><img src="/demos/2020/web/sites/default/files/2020-01/project-2_3.jpg"></div>
+            <h3><a href="/demos/2020/web/node/37">Marketing Strategy</a></h3>
+            <p></p><p><span>Far far away, behind the word mountains, far from the countries Vokalia.</span></p><p></p>
+          </div>
+          {{ drupal_view('training', 'block_1') }}
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+{#--------------------------------------------------------traing content end----------------------------------------------#}
+
+
+
+
+
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-6 col-lg-4">
+        <div class="ftco-footer-widget mb-5">
+          <h2 class="ftco-heading-2">Have a Questions?</h2>
+          <div class="block-23 mb-3">
+            <ul>
+              <li><span class="icon icon-map-marker"></span><span class="text">{{ global_address }}</span></li>
+              <li><a href="tel:{{ global_contact_phone }}"><span class="icon icon-phone"></span><span class="text">{{ global_contact_phone }}</span></a></li>
+              <li><a href="mailto:{{ global_contact_email }}"><span class="icon icon-envelope"></span><span class="text">{{ global_contact_email }}</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="ftco-footer-widget mb-5 ml-md-4">
+          <h2 class="ftco-heading-2">Links</h2>
+          {{ page.footer_menu }}
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="ftco-footer-widget mb-5">
+          {{ page.footer_blog }}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        {{ page.copyright }}
+      </div>
+    </div>
+  </div>
+</footer>
+
