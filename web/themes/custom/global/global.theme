@@ -127,3 +127,16 @@ function global_preprocess_views_view_unformatted(&$var){
   }
 }
 
+function global_preprocess_views_view_fields(&$vars) {
+  if ($vars['view']->name == 'training') {
+    $vars['index'] = $vars['view']->row_index;
+    $vars['view_title'] = [
+      '#markup' => $vars['view']->getTitle(),
+    ];
+    $vars['gopal'] = "if part";
+    // Do stuff here.
+  }
+  else{
+    $vars['gopal'] = 'else part';
+  }
+}
